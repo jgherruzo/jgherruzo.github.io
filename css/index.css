@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/* Reset default styles for better consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  html, body {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Montserrat',sans-serif;
+    line-height: 1.6;
+    color: #000;
+    background-color: #fff;
+  }
+  
+  main {
+    padding: 40px;
+  }
+
+  /* Header (upper menu) styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #141572;
+  padding: 10px;
+}
+/* Common navigation menu styles */
+nav {
+  background-color: #141572;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease; /* Add transition for color change */
+}
+
+/* Apply active styles for the current page's link */
+nav ul li a.active {
+  color: #007BFF;
+}
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease; /* Add transition for opacity change */
+}
+/* Section 1 styles */
+#section1 {
+    color: #000; /* Change font color to black */
+    padding: 40px 0;
+    margin-top: 40px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .section1-part1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .section1-part1 img {
+    max-width: 200px;
+    border-radius: 50%;
+  }
+  
+  .section1-part1 h1 {
+    font-size: 32px;
+    margin: 20px 0;
+  }
+  
+  .section1-part2 {
+    text-align: center;
+  }
+  
+  .section1-part2 p {
+    font-size: 18px;
+  }
+  
+  /* Section 2 and Section 3 styles */
+  .cross-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+  }
+  
+  .cross-item {
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    background-color: #141572;
+    color: #fff;
+    margin: 10px;
+  }
+  
+  .cross-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .cross-item p {
+    font-size: 16px;
+  }
+  
+/* Section 2 styles */
+#section2 {
+    background-color: #141572;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center; /* Center the content within Section 2 */
+  }
+  
+  .section-title {
+    margin-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 36px;
+  }
+  
+  .cross-section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Stretch items to have the same height */
+    flex-wrap: wrap;
+    gap: 20px; /* Create space between cross-items */
+  }
+  
+#cis2 {
+    width: 250px; /* Set a fixed width for all cross-items */
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    color: #000;
+    flex: 1; /* Allow each item to take equal space within the flex container */
+  }
+  
+  .h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .p {
+    font-size: 16px;
+  }
+
+  /* Section 3 styles */
+#section3 {
+    background-color: #f1f1f1; /* Toggle background color */
+    color: #000; /* Toggle font color */
+    padding: 40px 0;
+    text-align: center; /* Center the content within Section 3 */
+  }
+  
+  .section-title {
+    margin-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 36px;
+  }
+  
+  .cross-section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Stretch items to have the same height */
+    flex-wrap: wrap;
+    gap: 20px; /* Create space between cross-items */
+  }
+  
+#cis3 {
+    width: 250px; /* Set a fixed width for all cross-items */
+    padding: 20px;
+    text-align: center;
+    background-color: #141572; /* Toggle background color */
+    color: #fff; /* Toggle font color */
+    flex: 1; /* Allow each item to take equal space within the flex container */
+  }
+  
+  .h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .p {
+    font-size: 16px;
+  }
+  
+  /* You can style the other sections similarly */
+  
+  

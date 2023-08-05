@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/* Reset default styles for better consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  html, body {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Montserrat',sans-serif;
+    line-height: 1.6;
+    color: #000;
+    background-color: #fff;
+  }
+  
+  main {
+    padding: 40px;
+  }
+
+  /* Header (upper menu) styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #141572;
+  padding: 10px;
+}
+/* Common navigation menu styles */
+nav {
+  background-color: #141572;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease; /* Add transition for color change */
+}
+
+/* Apply active styles for the current page's link */
+nav ul li a.active {
+  color: #007BFF;
+}
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease; /* Add transition for opacity change */
+}
+
+/* Experience Blocks styles */
+#section1 {
+  padding: 20px 0;
+  margin-top: 40px;
+  background-color: #141572;
+}
+
+.experience-blocks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.experience-item {
+  width: calc(40% - 20px); /* Two blocks, minus gap */
+  background-color: #f1f1f1;
+  color: #000;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Display one block per line on mobile view */
+@media (max-width: 767px) {
+  .experience-item {
+    width: 100%; /* Full width on mobile */
+  }
+}
+
+.experience-header {
+  background-color: #141572; /* Blue background */
+  color: #fff; /* Font color for header */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experience-header h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.experience-details {
+  padding: 10px;
+}
