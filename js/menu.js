@@ -19,3 +19,27 @@ document.addEventListener('click', function (e) {
     document.body.style.opacity = 0;
   });
   
+  document.addEventListener('DOMContentLoaded', function () {
+    const summaryImage = document.querySelector('.summary-image');
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+    let isOverlayVisible = false;
+  
+    summaryImage.addEventListener('click', function () {
+      if (!isOverlayVisible) {
+        overlay.innerHTML = `<img src="${this.src}" alt="Graphic Summary">`;
+        document.body.appendChild(overlay);
+        overlay.style.display = 'flex';
+        isOverlayVisible = true;
+      } else {
+        overlay.style.display = 'none';
+        isOverlayVisible = false;
+      }
+    });
+  
+    overlay.addEventListener('click', function () {
+      overlay.style.display = 'none';
+      isOverlayVisible = false;
+    });
+  });
+  

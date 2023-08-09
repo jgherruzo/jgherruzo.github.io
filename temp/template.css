@@ -29,6 +29,12 @@ header {
   padding: 10px;
 }
 
+/* Common navigation menu styles */
+nav {
+  background-color: #141572;
+  padding: 10px;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -47,4 +53,19 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
+  transition: color 0.3s ease; /* Add transition for color change */
+}
+/* Adjust font size and padding for mobile view */
+@media (max-width: 767px) {
+  nav ul li a {
+    font-size: 15px;
+  }
+}
+/* Apply active styles for the current page's link */
+nav ul li a.active {
+  color: #007BFF;
+}
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease; /* Add transition for opacity change */
 }
