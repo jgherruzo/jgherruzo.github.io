@@ -130,3 +130,30 @@ body {
   text-align: left;
 
 }
+
+/* Footer styles */
+footer {
+  background-color: #141572; /* Blue background */
+  color: #fff; /* White text color */
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-icon img {
+  max-width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.email-address a {
+  color: #fff; /* White text color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
