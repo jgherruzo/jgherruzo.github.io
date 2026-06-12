@@ -4,98 +4,348 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="José García Herruzo — Operations &amp; Process Engineer. I find what costs you money. Then I fix it.">
+  <meta property="og:title" content="José García Herruzo">
+  <meta property="og:description" content="I find what costs you money. Then I fix it.">
+  <meta property="og:type" content="website">
   <title>José García Herruzo</title>
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Profile</a></li>
-        <li><a href="pages/Training.html">Training</a></li>
-        <li><a href="pages/Experience.html">Experience</a></li>
-        <li><a href="pages/Skills.html">Skills</a></li>
-        <li><a href="pages/Blog.html">Blog</a></li>
+
+  <!-- ============================================================ NAV -->
+  <header class="site-nav" role="banner">
+    <a href="#hero" class="nav-name">José García Herruzo</a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#built">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
   <main>
-    <section id="section1" style="background-image: url('pics/bg1.jpg');">
-      <div class="section1-part1">
-        <img src="pics/avatar.png" alt="Your Avatar">
-        <h1>José García Herruzo</h1>
-      </div>
-      <div class="section1-part2">
-        <h2>Optimizing processes since 2011</h2>
+
+    <!-- ============================================================ HERO -->
+    <section id="hero" aria-label="Introduction">
+      <div class="hero-inner">
+        <img src="pics/avatar.png" alt="José García Herruzo" class="avatar">
+        <div class="hero-text">
+          <p class="hero-label">Operations &amp; Process Engineer</p>
+          <h1>José García Herruzo</h1>
+          <p class="hero-tagline">I find what costs you money.<br>Then I fix it.</p>
+          <p class="hero-sub">15 years turning industrial plants into measurably better operations — through process engineering, production ML, and large-scale operational leadership.</p>
+          <div class="hero-links">
+            <a href="https://www.linkedin.com/in/jos%C3%A9-garc%C3%ADa-herruzo-07032b50" class="btn btn-primary" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/jgherruzo" class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:jgherruzo@gmail.com" class="btn btn-ghost">jgherruzo@gmail.com</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="section2">
-        <div class="section-title">
-            <h2>Looking for excellence in operations</h2>
+    <!-- ============================================================ METRICS -->
+    <section id="metrics" aria-label="Key achievements">
+      <div class="metrics-grid">
+        <div class="metric-item">
+          <span class="metric-number" data-target="22" data-prefix="€" data-suffix="M+">€0M+</span>
+          <span class="metric-label">Annual OPEX managed</span>
         </div>
-        <div class="cross-section">
-          <div class="cross-item" id="cis2">
-            <h2>Safety</h2>
-            <p>Goal: 0 accident</p>
-          </div>
-          <div class="cross-item" id="cis2">
-            <h2>Environmental impact</h2>
-            <p>Reduce our footprint</p>
-          </div>
-          <div class="cross-item" id="cis2">
-            <h2>Resources consumption</h2>
-            <p>Minimize our requirement</p>
-          </div>
-          <div class="cross-item" id="cis2">
-            <h2>Plant availability</h2>
-            <p>Maximize your production rate</p>
+        <div class="metric-item">
+          <span class="metric-number" data-target="100" data-suffix="+">0+</span>
+          <span class="metric-label">Team members led</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-number" data-target="50" data-suffix="%">0%</span>
+          <span class="metric-label">Fewer production incidents</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-number" data-target="60" data-suffix="%">0%</span>
+          <span class="metric-label">Less overtime spending</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-number" data-target="200" data-suffix=" GWh">0 GWh</span>
+          <span class="metric-label">Energy recovery identified</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-number" data-target="15" data-suffix=" yr">0 yr</span>
+          <span class="metric-label">Industry experience</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ EXPERIENCE -->
+    <section id="experience" aria-label="Work experience">
+      <div class="section-header">
+        <h2>Where I've done it</h2>
+      </div>
+      <div class="timeline">
+
+        <!-- Atlantic Copper — Operations Manager -->
+        <div class="timeline-item">
+          <div class="timeline-node" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <button class="timeline-toggle" aria-expanded="true" aria-controls="detail-ac2">
+              <div class="timeline-meta">
+                <span class="timeline-company">Atlantic Copper</span>
+                <span class="timeline-period">Jan 2025 — present</span>
+              </div>
+              <h3 class="timeline-role">Operations Manager — Converting, Refining &amp; Casting</h3>
+              <span class="timeline-chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="timeline-detail" id="detail-ac2">
+              <ul>
+                <li>Managing <strong>+€22M OPEX</strong> with under 2% forecast deviation — two consecutive years</li>
+                <li>Led a <strong>100+ person team</strong>; technician performance lifted from 20% to 80%</li>
+                <li>Cut production-impacting events by <strong>50%</strong> through proactive root-cause analysis and cross-functional coordination</li>
+                <li>Reduced customer quality incidents by <strong>15%</strong> via structured bi-monthly feedback reviews</li>
+                <li><strong>60% reduction in overtime spending</strong> through redesigned shift planning strategy</li>
+                <li>Delivered <strong>&gt;95% on-time complex shutdowns</strong> integrating Engineering, Production and Logistics</li>
+                <li>Implemented coaching and feedback system raising employee engagement scores <strong>+25%</strong></li>
+              </ul>
+              <a href="exp/ac_2.html" class="detail-link" target="_blank">Full detail →</a>
+            </div>
           </div>
         </div>
-      </section>
-  
-      <section id="section3">
-        <div class="section-title">
-          <h2>Working principles</h2>
+
+        <!-- Atlantic Copper — Process Engineer -->
+        <div class="timeline-item">
+          <div class="timeline-node" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <button class="timeline-toggle" aria-expanded="false" aria-controls="detail-ac1">
+              <div class="timeline-meta">
+                <span class="timeline-company">Atlantic Copper</span>
+                <span class="timeline-period">May 2017 — Dec 2024</span>
+              </div>
+              <h3 class="timeline-role">Process Engineer — Sulphuric Acid Plants</h3>
+              <span class="timeline-chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="timeline-detail" id="detail-ac1" hidden>
+              <ul>
+                <li>Built <strong>5+ ML models running in production</strong>: catalyst behaviour, SO₂ emissions, gas management, capacity monitoring, catalyst activity</li>
+                <li>Catalyst pressure-drop prediction model: <strong>saved 20+ production days</strong></li>
+                <li>Acid quality study: identified wrong technology selection, saving <strong>~€2M capex</strong></li>
+                <li>Energy Management: <strong>30% refrigeration water reduction</strong>, 10% blower consumption cut, <strong>200 GWh/year</strong> recovery potential mapped</li>
+                <li>Gypsum plant capacity: <strong>58% → 80%+</strong> via Six Sigma root-cause analysis</li>
+                <li>Emission Reduction Plan: <strong>−15% per plant</strong> across 3 sulphuric acid plants</li>
+                <li>Shift Manager for 3 general shutdowns (catalyst replacement, 30 workers each)</li>
+                <li>€6M Steam Gas Reduction project — Project Manager</li>
+                <li>HAZOP staff: SA Plant 3 (2019), SA Plant 1 Heat Recovery (2020)</li>
+              </ul>
+              <a href="exp/ac.html" class="detail-link" target="_blank">Full detail →</a>
+            </div>
+          </div>
         </div>
-        <div class="cross-section">
-          <div class="cross-item" id="cis3">
-            <h3>Responsibility</h3>
-            <p>Long term view</p>
-          </div>
-          <div class="cross-item" id="cis3">
-            <h3>Innovation</h3>
-            <p>Specifics solutions for specifics problems</p>
-          </div>
-          <div class="cross-item" id="cis3">
-            <h3>SMART</h3>
-            <p>Easier the better</p>
-          </div>
-          <div class="cross-item" id="cis3">
-            <h3>Update</h3>
-            <p>Stay in the know how</p>
+
+        <!-- Abengoa -->
+        <div class="timeline-item">
+          <div class="timeline-node" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <button class="timeline-toggle" aria-expanded="false" aria-controls="detail-abg">
+              <div class="timeline-meta">
+                <span class="timeline-company">Abengoa</span>
+                <span class="timeline-period">Nov 2012 — May 2017</span>
+              </div>
+              <h3 class="timeline-role">Process Engineer &amp; Simulation Team Manager — Biofuels</h3>
+              <span class="timeline-chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="timeline-detail" id="detail-abg" hidden>
+              <ul>
+                <li>Led basic engineering and simulation across multiple biofuel technology lines: MSW-to-ethanol, enzymatic ethanol, biobutanol (Fischer-Tropsch)</li>
+                <li>Built <strong>BECS</strong> — internal tool that standardised and automated basic engineering documentation packages, adopted across 3 Abengoa business units</li>
+                <li>Responsible for energy integration across all project areas</li>
+                <li>HAZOP staff: Fulcrum Sierra Biofuels Plant</li>
+              </ul>
+              <a href="exp/abg.html" class="detail-link" target="_blank">Full detail →</a>
+            </div>
           </div>
         </div>
-      </section>
-  
+
+        <!-- Earlier -->
+        <div class="timeline-item">
+          <div class="timeline-node" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <button class="timeline-toggle" aria-expanded="false" aria-controls="detail-earlier">
+              <div class="timeline-meta">
+                <span class="timeline-company">Earlier roles</span>
+                <span class="timeline-period">2009 — 2012</span>
+              </div>
+              <h3 class="timeline-role">Cobre Las Cruces · CEPSA · e-ON</h3>
+              <span class="timeline-chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="timeline-detail" id="detail-earlier" hidden>
+              <ul>
+                <li><strong>Cobre Las Cruces (2011–12):</strong> Built KPI and OEE tracking tools in OSIsoft PI / VBA from scratch</li>
+                <li><strong>CEPSA (2011):</strong> Modelled and optimised a Depentanizer Tower in Aspen Hysys</li>
+                <li><strong>e-ON (2009):</strong> Laboratory technician — water-steam cycle control, emissions network monitoring</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================ SKILLS -->
+    <section id="skills" aria-label="Skills and tools">
+      <div class="section-header">
+        <h2>How I do it</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Engineering</h3>
+          <div class="skill-chips">
+            <span class="chip certified">Aspen Plus ✓</span>
+            <span class="chip certified">Aspen Hysys ✓</span>
+            <span class="chip">Six Sigma Green Belt</span>
+            <span class="chip">HAZOP</span>
+            <span class="chip">Energy Management</span>
+            <span class="chip">Process Simulation</span>
+            <span class="chip">DWSIM · ChemCad</span>
+            <span class="chip">PMI / Agile (2024)</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Data &amp; Code</h3>
+          <div class="skill-chips">
+            <span class="chip">Python</span>
+            <span class="chip">Machine Learning (sklearn)</span>
+            <span class="chip">OSIsoft PI</span>
+            <span class="chip">Snowflake</span>
+            <span class="chip">SQL · SQLite · MariaDB</span>
+            <span class="chip">InfluxDB</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">Grafana</span>
+            <span class="chip">JavaScript · NodeRed</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Leadership</h3>
+          <div class="skill-chips">
+            <span class="chip">Operations management</span>
+            <span class="chip">OPEX budgeting (+€22M)</span>
+            <span class="chip">100+ person teams</span>
+            <span class="chip">Shutdown management</span>
+            <span class="chip">Cross-functional coordination</span>
+            <span class="chip">Coaching &amp; feedback</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ BUILT -->
+    <section id="built" aria-label="Open source and writing">
+      <div class="section-header section-header--light">
+        <h2>Built &amp; published</h2>
+      </div>
+      <div class="built-strip">
+        <a href="https://pypi.org/project/pypetb/" class="built-item" target="_blank" rel="noopener">
+          <span class="built-label">pypetb</span>
+          <span class="built-desc">Python library for process engineering — published on PyPI</span>
+        </a>
+        <a href="https://github.com/jgherruzo/Email_Agent" class="built-item" target="_blank" rel="noopener">
+          <span class="built-label">Email_Agent</span>
+          <span class="built-desc">AI-powered email automation agent — open source on GitHub</span>
+        </a>
+        <a href="https://medium.com/@jgherruzo" class="built-item" target="_blank" rel="noopener">
+          <span class="built-label">Medium</span>
+          <span class="built-desc">Writing on process engineering and industrial data</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================ FORMATION -->
+    <section id="formation" aria-label="Education and certifications">
+      <div class="section-header accordion-header">
+        <button class="accordion-toggle" aria-expanded="false" aria-controls="formation-content">
+          <h2>Formation</h2>
+          <span class="accordion-chevron" aria-hidden="true">▾</span>
+        </button>
+      </div>
+      <div id="formation-content" hidden>
+        <div class="formation-inner">
+          <div class="formation-grid">
+            <div class="formation-item">
+              <h4>Chemical Engineering</h4>
+              <p>ETSI Universidad de Sevilla · 2005–2012 · 360 ECTS</p>
+              <p class="formation-note">Best Final Thesis Award — oil refining &amp; petrochemical area (CEPSA)</p>
+              <a href="docs/BOE.pdf" target="_blank" class="doc-link">Programme →</a>
+            </div>
+            <div class="formation-item">
+              <h4>Master in Production Management &amp; Industrial Process Improvement</h4>
+              <p>OBS / Universidad de Barcelona · 2016–2017 · 60 ECTS</p>
+              <a href="docs/Master.pdf" target="_blank" class="doc-link">Programme →</a>
+            </div>
+            <div class="formation-item">
+              <h4>Project Management Executive Programme</h4>
+              <p>EOI · 2024 · PMI / Agile methodology · 136h</p>
+              <a href="https://www.eoi.es/es/cursos/89443/programa-ejecutivo-en-direccion-de-proyectos-metodologia-pmi-agile-madrid" target="_blank" class="doc-link">Programme →</a>
+            </div>
+          </div>
+
+          <h3 class="formation-subheader">Certifications &amp; Courses</h3>
+          <div class="formation-grid">
+            <div class="formation-item">
+              <h4>Aspen Plus Certified User</h4>
+              <p>Aspentech · 2021–2024 · Credential 00004761</p>
+            </div>
+            <div class="formation-item">
+              <h4>Aspen Hysys Certified User</h4>
+              <p>Aspentech · 2020–2023 · Credential 00004522</p>
+            </div>
+            <div class="formation-item">
+              <h4>A4E Analytics for Everyone</h4>
+              <p>DataCamp / Freeport McMoran · 2021–2022</p>
+              <p class="formation-note">Python 99th · Data Visualisation 100th · Statistics 95th percentile</p>
+            </div>
+            <div class="formation-item">
+              <h4>Six Sigma Green Belt</h4>
+              <p>Caletec · 80h</p>
+            </div>
+            <div class="formation-item">
+              <h4>Horizontal Leadership Cycle</h4>
+              <p>Otto Walter Internacional · 2022 · 4-month programme</p>
+            </div>
+            <div class="formation-item">
+              <h4>Thermodynamics for Process Engineers</h4>
+              <p>Inspyro · 33h</p>
+            </div>
+            <div class="formation-item">
+              <h4>Economics &amp; Financial Analysis</h4>
+              <p>Escuela de Empresa · 2012–2013 · 200h</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
-  <footer>
-    <div class="footer-content">
-      <div class="email-icon">
-        <img src="pics/icon_mail.png" alt="Email Icon">
-      </div>
-      <div class="email-address">
-        <a href="mailto:jgherruzo@gmail.com">jgherruzo@gmail.com</a>
+  <!-- ============================================================ FOOTER -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <p class="footer-tagline">Let's connect</p>
+      <a href="mailto:jgherruzo@gmail.com" class="footer-email">jgherruzo@gmail.com</a>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/jos%C3%A9-garc%C3%ADa-herruzo-07032b50" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/jgherruzo" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://medium.com/@jgherruzo" target="_blank" rel="noopener">Medium</a>
       </div>
     </div>
   </footer>
 
-  <script src="js/menu.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
-
 </html>

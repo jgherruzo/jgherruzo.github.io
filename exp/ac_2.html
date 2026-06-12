@@ -1,94 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>José García Herruzo</title>
-  <link rel="stylesheet" href="../css/ac.css">
+  <title>Atlantic Copper — Operations Manager · José García Herruzo</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙</text></svg>">
+  <link rel="stylesheet" href="../css/detail.css">
 </head>
-
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Profile</a></li>
-        <li><a href="../pages/Training.html">Training</a></li>
-        <li><a href="../pages/Experience.html">Experience</a></li>
-        <li><a href="../pages/Skills.html">Skills</a></li>
-        <li><a href="../pages/Blog.html">Blog</a></li>
-      </ul>
-    </nav>
+
+  <header class="site-nav">
+    <a href="../index.html#experience" class="nav-back">← Back</a>
+    <span class="nav-title">Atlantic Copper</span>
   </header>
 
   <main>
-    <section id="section1">
 
-      <div class="content-block">
-        <!-- Block 1 -->
-        <div class="block-item" id="BlockA">
-          <div class="block-title">
-            <h2>Atlantic Copper, Jan 2025 - Present</h2>
-          </div>
-        </div>
-  
-        <!-- Block 2 -->
-        <div class="block-item" id="BlockB">
-          <div class="block-inline">
-            <div class="block-image">
-              <img src="../pics/ac.png" alt="Image">
-            </div>
-            <div class="block-text">
-              <p>Leading operation for converter, refining and casting areas</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Block 3 -->
-        <div class="block-item" id="BlockC">
-          <div class="block-title-B">
-            <h2>Graphic Summary</h2>
-          </div>
-          <div class="Container">
-            <div class="block-image">
-              <img src="../pics/ac_2.png" alt="Graphic Summary" class="summary-image">
-            </div>
-          </div>
-        </div>
-  
-        <!-- Block 4 -->
-        <div class="block-item" id="BlockD">
-          <div class="block-title-B">
-            <h2>Experience Highlights</h2>
-          </div>
-          <div class="block-text">
-            <p><b>The Team: </b>Directed a >100 collaborators team. Implemented a coaching and feedback system, increasing employee engagement scores by 25% in internal surveys. Technician performance increases from 20% to 80%</p>
-            <p><b>OPEX management: </b>Managed an annual OPEX budget of +€22M, delivering execution with <2% deviation from forecast. </p>
-            <p><b>Production: </b>Reduced production-impacting events by 50% through proactive root cause analysis and cross-functional coordination.</p>
-            <p><b>Quality: </b>Established regular bi-monthly reviews with customers, translating feedback into preventive actions and achieving a 15% decrease in incidents.</p>
-            <p><b>Improvements: </b>Led the integration of Engineering, Production, and Logistics in improvement projects, ensuring >95% on-time delivery in complex shutdowns. </p>
-            <p><b>Workforce planning: </b>Designed and implemented a workforce planning strategy, achieving a 60% reduction in overtime spending through improved shift planning.</p>
-          </div>
-        </div>
+    <div class="detail-header">
+      <p class="detail-company">Atlantic Copper</p>
+      <h1>Operations Manager<br>Converting, Refining &amp; Casting</h1>
+      <p class="detail-period">Jan 2025 — present</p>
+      <p class="detail-intro">Leading day-to-day operations across three production areas of one of Europe's largest copper smelters — managing budget, people, quality, and continuous improvement simultaneously.</p>
+    </div>
+
+    <div class="summary-wrap">
+      <h2>Graphic Summary</h2>
+      <img src="../pics/ac_2.png" alt="Operations Manager graphic summary" class="summary-img" id="summary-img">
+    </div>
+
+    <div class="highlights">
+      <h2>Experience Highlights</h2>
+
+      <div class="highlight-item">
+        <strong>OPEX Management</strong>
+        <p>Managing an annual OPEX budget of +€22M, delivering execution with &lt;2% deviation from forecast — two consecutive years running.</p>
       </div>
-    </section>
-  
-    <!-- ... Rest of the code ... -->
+
+      <div class="highlight-item">
+        <strong>The Team</strong>
+        <p>Directed a 100+ collaborator team. Implemented a coaching and feedback system that raised employee engagement scores by 25% in internal surveys. Technician performance lifted from 20% to 80%.</p>
+      </div>
+
+      <div class="highlight-item">
+        <strong>Production</strong>
+        <p>Reduced production-impacting events by 50% through proactive root-cause analysis and cross-functional coordination between operations, maintenance, and engineering.</p>
+      </div>
+
+      <div class="highlight-item">
+        <strong>Quality</strong>
+        <p>Established regular bi-monthly reviews with customers, translating direct feedback into preventive actions and achieving a 15% decrease in quality incidents.</p>
+      </div>
+
+      <div class="highlight-item">
+        <strong>Shutdown Delivery</strong>
+        <p>Led the integration of Engineering, Production, and Logistics in improvement projects, ensuring &gt;95% on-time delivery in complex plant shutdowns.</p>
+      </div>
+
+      <div class="highlight-item">
+        <strong>Workforce Planning</strong>
+        <p>Designed and implemented a workforce planning strategy achieving a 60% reduction in overtime spending through improved shift design and resource allocation.</p>
+      </div>
+
+    </div>
+
   </main>
 
   <footer>
-    <div class="footer-content">
-      <div class="email-icon">
-        <img src="../pics/icon_mail.png" alt="Email Icon">
-      </div>
-      <div class="email-address">
-        <a href="mailto:jgherruzo@gmail.com">jgherruzo@gmail.com</a>
-      </div>
-    </div>
+    <a href="mailto:jgherruzo@gmail.com">jgherruzo@gmail.com</a>
   </footer>
 
-  <script src="../js/menu.js"></script>
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Image zoom">
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script>
+    const img      = document.getElementById('summary-img');
+    const lightbox = document.getElementById('lightbox');
+    const lbImg    = document.getElementById('lightbox-img');
+    if (img && lightbox) {
+      img.addEventListener('click', () => {
+        lbImg.src = img.src;
+        lightbox.classList.add('open');
+      });
+      lightbox.addEventListener('click', () => lightbox.classList.remove('open'));
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') lightbox.classList.remove('open');
+      });
+    }
+  </script>
 
 </body>
-
 </html>

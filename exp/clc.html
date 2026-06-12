@@ -1,91 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>José García Herruzo</title>
-  <link rel="stylesheet" href="../css/clc.css">
+  <title>Cobre Las Cruces — Process Engineer · José García Herruzo</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙</text></svg>">
+  <link rel="stylesheet" href="../css/detail.css">
 </head>
-
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Profile</a></li>
-        <li><a href="../pages/Training.html">Training</a></li>
-        <li><a href="../pages/Experience.html">Experience</a></li>
-        <li><a href="../pages/Skills.html">Skills</a></li>
-        <li><a href="../pages/Blog.html">Blog</a></li>
-      </ul>
-    </nav>
+
+  <header class="site-nav">
+    <a href="../index.html#experience" class="nav-back">← Back</a>
+    <span class="nav-title">Cobre Las Cruces</span>
   </header>
 
   <main>
-    <section id="section1">
 
-      <div class="content-block">
-        <!-- Block 1 -->
-        <div class="block-item" id="BlockA">
-          <div class="block-title">
-            <h2>Cobre Las Cruces, Nov 2011 - Jul 2012</h2>
-          </div>
-        </div>
-  
-        <!-- Block 2 -->
-        <div class="block-item" id="BlockB">
-          <div class="block-inline">
-            <div class="block-image">
-              <img src="../pics/clc.jpg" alt="Image">
-            </div>
-            <div class="block-text">
-              <p>As intern in Control Department I was in charge of developing control tools for engineers, including developing calculation in PI ACE and Processbook.</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Block 3 -->
-        <div class="block-item" id="BlockC">
-          <div class="block-title-B">
-            <h2>Graphic Summary</h2>
-          </div>
-          <div class="Container">
-            <div class="block-image">
-              <img src="../pics/clc_sum.png" alt="Graphic Summary" class="summary-image">
-            </div>
-          </div>
-        </div>
-  
-        <!-- Block 4 -->
-        <div class="block-item" id="BlockD">
-          <div class="block-title-B">
-            <h2>Experience Highlights</h2>
-          </div>
-          <div class="block-text">
-            <p><b>KPI: </b>Developing and implementing a tool to follow up the manufacture key performance indicators. This project includes developing calculation on PI ACE and downloading result on PI Database. Reading data into PI Processbook, including VBA codification for deep calculation and sight improvements.</p>
-            <p></p>
-            <p><b>OEE: </b>Developing and implementing a tool to follow up p the overall equipment efficiency. This project includes developing data capture app developed in VB, reading this information and making new calculation in PI ACE to show up into PI Processbook for bottleneck analysis.</p>
-          </div>
-        </div>
+    <div class="detail-header">
+      <p class="detail-company">Cobre Las Cruces</p>
+      <h1>Process Engineer<br>(Intern)</h1>
+      <p class="detail-period">Nov 2011 — Jul 2012</p>
+      <p class="detail-intro">Placed in the Control Department, responsible for building real-time operational tools for engineers using OSIsoft PI — the beginning of a career-long focus on data-driven process monitoring.</p>
+    </div>
+
+    <div class="summary-wrap">
+      <h2>Graphic Summary</h2>
+      <img src="../pics/clc_sum.png" alt="Cobre Las Cruces graphic summary" class="summary-img" id="summary-img">
+    </div>
+
+    <div class="highlights">
+      <h2>Experience Highlights</h2>
+
+      <div class="highlight-item">
+        <strong>KPI Tracking Tool</strong>
+        <p>Designed and implemented a real-time manufacturing KPI dashboard. Built calculations in PI ACE, stored results in the PI Database, and visualised them in PI Processbook — including VBA code for advanced calculations and display logic.</p>
       </div>
-    </section>
-  
-    <!-- ... Rest of the code ... -->
+
+      <div class="highlight-item">
+        <strong>OEE Monitoring Tool</strong>
+        <p>Developed an Overall Equipment Effectiveness monitoring system from scratch. Built a custom VB data-capture application, fed results into PI ACE for further calculation, and surfaced them in PI Processbook for real-time bottleneck analysis.</p>
+      </div>
+
+    </div>
+
   </main>
 
   <footer>
-    <div class="footer-content">
-      <div class="email-icon">
-        <img src="../pics/icon_mail.png" alt="Email Icon">
-      </div>
-      <div class="email-address">
-        <a href="mailto:jgherruzo@gmail.com">jgherruzo@gmail.com</a>
-      </div>
-    </div>
+    <a href="mailto:jgherruzo@gmail.com">jgherruzo@gmail.com</a>
   </footer>
 
-  <script src="../js/menu.js"></script>
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Image zoom">
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script>
+    const img      = document.getElementById('summary-img');
+    const lightbox = document.getElementById('lightbox');
+    const lbImg    = document.getElementById('lightbox-img');
+    if (img && lightbox) {
+      img.addEventListener('click', () => {
+        lbImg.src = img.src;
+        lightbox.classList.add('open');
+      });
+      lightbox.addEventListener('click', () => lightbox.classList.remove('open'));
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') lightbox.classList.remove('open');
+      });
+    }
+  </script>
 
 </body>
-
 </html>
